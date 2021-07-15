@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta char="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="join.css">
+    <script src="https://kit.fontawesome.com/3c4311b30d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="wrap">
+    <div class="statusBar">
+      <div class="statusBar_column1">
+       <span class="statusBar__clock">sdf<i class="far fa-clock"></i></span>
+      </div>
+      <div class="statusBar_column2">
+        <span class="statusBar__signal"><i class="fas fa-signal"></i></span>
+        <span> <i class="fas fa-wifi"></i></span>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
+    </div>
+    <div class="back">
+      <i class="fas fa-arrow-left"></i>
+    </div>
+    <div class="info">
+      <div class="infoprop">
+      <form action={} method="post">
+        <div class="info_id">
+          <label for="id">id</label>
+          <input type="text" id="id">
+          <button type="submit" id="check">중복확인</button>
+        </div>
+        <div class="info_pw">
+          <div class="pwinput">
+            <label for="pw" style="float:left;">비밀번호</label>
+            <input type="text" id="pw">
+          </div>
+          <div class="pwCheck">
+            <label for="pwC" style="float:left;">비밀번호확인</label>
+            <input type="text" id="pwC" >
+          </div>
+        </div>
+      </form>
+      </div>
+      <div class="info_location">
+        <div class="info_location_find">
+          <span>위치</span>
+          <form action={} method="get" style="display:inline;">
+            <input type="text" id="getLo" placeholder="우편번호입력" style="height:52px">
+            <button id="getpost">우편번호찾기</button>
+          </form>
+          </div>
+          <div class="info_location_find_pop">
+            <form action={} method="post">
+              <label for="street">도로명주소</label>
+              <input type="text" id="street" placeholder="**로" style="height:52px">
+              <button type="submit" id="sendStreet" style="height:52px">찾기</button>
+            </form>
+            <div class="info_location_pop_list" style="background-color: gray;"></div>         
+          </div>
+        </div>
+        <div class="info_location_last">
+          <form action=" " method="post">
+            <input type="text" id="detail" placeholder="상세주소입력" style="height:52px">
+          </form>
+        </div>
+      </div>
+      <form action="" method="post">
+        <button type="submit" id="finished" style="height:52px">회원가입</button>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>

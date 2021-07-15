@@ -1,0 +1,36 @@
+body{
+  margin:0;
+  width: 375px;
+}
+
+.statusBar_column1{
+  display:inline-block;
+  background-color: aqua;
+}
+.statusBar_column2{
+  background-color:blueviolet;
+  display:inline-block;
+  
+}
+.otherInfo{
+  background-color: gray;
+  display:inline-block;
+  width:100px;
+  height:80px;
+}
+.profile{
+  display:inline-block;
+}
+.profile_photo{
+  display:inline-block;
+  height:110px;
+}
+.userInfo{
+  display:inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.userId{
+  height:20px;
+  display:block;
+}
