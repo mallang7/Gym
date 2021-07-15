@@ -1,6 +1,7 @@
 /*Tab bar*/
+@import "../reset.css";
 
-.tab {
+.tab__ {
   position: fixed;
   bottom: 0;
   width: 100%;
