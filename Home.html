@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="shorcut icon" href="./image/favicon.svg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>짐트</title>
+</head>
+
+<body>
+  <!--맨 위에 핸드폰 상태창-->
+  <div class="status-bar">
+    <div class="status-bar__column js-clock">
+      <span>00:00</span>
+    </div>
+    <div class="status-bar__column">
+    </div>
+    <div class="status-bar__column">
+      <i class="fas fa-bolt"></i>
+      <i class="fas fa-wifi"></i>
+      <i class="fas fa-battery-full fa-lg"></i>
+    </div>
+  </div>
+  <main>
+    <!--대회 정보-->
+    <div class="component_column">
+      <div class="component_column__competition">
+        <span><i style="color:rgb(68, 153, 47);" class="fas fa-flag"></i> 대회정보</span>
+        <div class="competition_list">
+          <div class="animation1">
+            <a href="http://runninggogo.com/event/%eb%b9%b5%eb%b9%b5%eb%9f%b0-2021/" target="_blank">
+              <img class="component_column__competition_image" src="./image/빵빵런_2021_9월1일.jpg" />
+            </a>
+          </div>
+          <div class="animation2">
+            <a href="http://sportseoul.co.kr/national/main.do" target="_blank">
+              <img class="component_column__competition_image" src="./image/전국생활체육대축전_2021_11월4일.jpg" />
+            </a>
+          </div>
+          <div class="animation3">
+            <a href="http://dangdangtrekking.com/" target="_blank">
+              <img class="component_column__competition_image" src="./image/댕댕트레킹_2021_9월_11일.jpg" />
+            </a>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="O"></div>
+          <div class="O"></div>
+          <div class="O"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--날씨 정보-->
+    <div class="component_column">
+      <div class="component_column__weather">
+        <span><i style="color: rgb(113, 80, 187);" class="fas fa-map-marker-alt"></i></i> 전라남도 나주시</span>
+        <div class="weather">
+          <div class="weather_today"><i style="color:rgb(255, 198, 92);" class="fas fa-sun fa-4x"></i>
+            <span class="js-today2"></span>
+            <span>맑음</span>
+          </div>
+          <div class="weather_timeline">
+            <div class="weather_column">
+              <i style="color:rgb(255, 198, 92);" class="fas fa-sun fa-2x"></i>
+              <span>6시</span>
+              <i style="color:rgb(184, 217, 255);" class="fas fa-cloud fa-2x"></i>
+              <span>15시</span>
+            </div>
+            <div class="weather_column">
+              <i style="color:rgb(167, 155, 132);" class="fas fa-cloud-sun fa-2x"></i>
+              <span>9시</span>
+              <i style="color:rgb(184, 217, 255);" class="fas fa-cloud fa-2x"></i>
+              <span>18시</span>
+            </div>
+            <div class="weather_column">
+              <i style="color:rgb(69, 128, 184);" class="fas fa-cloud-showers-heavy fa-2x"></i>
+              <span>12시</span>
+              <i style="color:rgb(255, 198, 92);" class="fas fa-sun fa-2x"></i>
+              <span>21시</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--운동 기록-->
+    <div class="component_column">
+      <div class="component_column__health_record">
+        <div class="health_record__title">
+          <span><i style="color:red;" class="fas fa-heartbeat"></i></i> 운동 기록</span><span class="js-today"></span>
+        </div>
+        <!--기록 list-->
+        <div class="health_record__column">
+          <img src="./image/자전거아이콘.jpg" />
+          <span>10:00 - 12:00</span>
+          <span>2시간</span>
+        </div>
+        <div class="health_record__column">
+          <img src="./image/농구아이콘.jpg" />
+          <span>14:00 - 18:00</span>
+          <span>4시간</span>
+        </div>
+        <div class="health_record__column">
+          <div class="plusbutton"><i class="fas fa-plus"></i></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--관심 체육관-->
+    <div class="component_column">
+      <div class="component_column__interested">
+        <span><i style="color:rgb(255, 194, 81);" class="fas fa-star"></i></i> 관심 체육관</span>
+        <div class="interested_content">
+          <img src="./image/나주시실내체육관.png" />
+          <div class="interested_content__name">전라남도 나주시 실내 체육관</div>
+          <div><i class="fas fa-map-marker-alt"></i>전남 나주시 구진포로 519</div>
+          <div><i class="fas fa-phone-alt"></i>016-330-8847</div>
+          <div><i class="far fa-clock"></i>06:00 ~ 22:00</div>
+          <div><i class="fas fa-check-square"></i>배드민턴, 족구, 배구</div>
+          <div><i class="fas fa-won-sign"></i>유료</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!-- 탭 바-->
+  <nav class="tab">
+    <ul class="tab__list">
+      <!--홈화면-->
+      <li class="tab__btn">
+        <a class="tab__link" href="Home.html">
+          <i class="fas fa-home fa-2x"></i>
+          <span>홈</span>
+        </a>
+      </li>
+      <!--체육관 찾기-->
+      <li class="tab__btn">
+        <a class="tab__link" href="#">
+          <i class="fas fa-search fa-2x"></i>
+          <span>체육관 찾기</span>
+        </a>
+      </li>
+      <li class="tab__btn">
+        <a class="tab__link" href="#">
+          <i class="fas fa-comments fa-2x"></i>
+          <span>커뮤니티</span>
+        </a>
+      </li>
+      <li class="tab__btn">
+        <a class="tab__link" href="#">
+          <i class="fas fa-user fa-2x"></i>
+          <span>내 정보</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="https://kit.fontawesome.com/70e0dc75f1.js" crossorigin="anonymous"></script>
+  <script src="js/clock.js"></script>
+  <script>
+    const today = document.querySelector(".js-today");
+    const today2 = document.querySelector(".js-today2");
+    const date = new Date();
+    today.innerText = `${date.getMonth() + 1}월 ${date.getDate()}일`;
+    today2.innerText = `${date.getMonth() + 1} / ${date.getDate()}`;
+  </script>
+</body>
+
+</html>

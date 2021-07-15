@@ -1,0 +1,29 @@
+/*Tab bar*/
+
+.tab {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--basic);
+  padding: 10px 40px;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.tab__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+.tab__link span {
+  margin-top: 5px;
+  font-size: small;
+}

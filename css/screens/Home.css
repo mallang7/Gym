@@ -1,0 +1,310 @@
+/*상태창 크기: 36px, 탭 바 크기: 71px
+이만큼 margin 줘야함*/
+
+main {
+  margin-top: 50px;
+  margin-bottom: 71px;
+  padding: 0px 30px;
+}
+
+.component_column {
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: var(--border);
+}
+
+/*대회 정보*/
+
+.component_column__competition .component_column__interested {
+  display: flex;
+  flex-direction: column;
+}
+
+.component_column__competition span {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.animation1,
+.animation2,
+.animation3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.competition_list {
+  margin-top: 15px;
+}
+.competition_list div > a {
+  position: absolute;
+}
+
+.component_column__competition_image {
+  width: 100%;
+  height: 190px;
+  border-radius: 25px;
+}
+
+/*이미지 애니메이션*/
+
+.animation1 {
+  opacity: 1;
+  animation: ImageAnimation-1 6s infinite;
+}
+.animation2 {
+  opacity: 0;
+  visibility: hidden;
+  animation: ImageAnimation-2 6s infinite;
+}
+.animation3 {
+  opacity: 0;
+  visibility: hidden;
+  animation: ImageAnimation-3 6s infinite;
+}
+
+@keyframes ImageAnimation-1 {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  33% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  66% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes ImageAnimation-2 {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  33% {
+    opacity: 1;
+    visibility: visible;
+  }
+  66% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes ImageAnimation-3 {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  33% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  66% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/*점 세개 + 애니메이션 3초*/
+.slider {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.O {
+  background-color: var(--basic);
+  width: 15px;
+  height: 15px;
+  border-radius: 25px;
+  margin: 0px 15px;
+  margin-top: 190px;
+  animation: sliderChange-1 6s infinite;
+}
+.O:nth-child(2) {
+  animation: sliderChange-2 6s infinite;
+}
+.O:last-child {
+  animation: sliderChange-3 6s infinite;
+}
+
+@keyframes sliderChange-1 {
+  0% {
+    background-color: var(--basic);
+  }
+  33% {
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+  66% {
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+}
+
+@keyframes sliderChange-2 {
+  0% {
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+  33% {
+    background-color: var(--basic);
+  }
+  66% {
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+}
+
+@keyframes sliderChange-3 {
+  0% {
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+  33% {
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+  66% {
+    background-color: var(--basic);
+  }
+}
+
+.O:nth-child(2),
+.O:last-child {
+  background-color: rgba(1, 1, 1, 0.1);
+}
+
+/*날씨 정보*/
+.component_column__weather span:first-child {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.weather {
+  padding: 5px 0px;
+  padding-left: 30px;
+  margin-top: 15px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 25px;
+  display: flex;
+}
+
+.weather_today {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}
+
+.weather_today i {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.weather_today span:last-child {
+  padding-top: 3px;
+  padding-bottom: 20px;
+  font-size: 13px;
+}
+
+.weather_timeline {
+  width: 66%;
+  display: flex;
+  margin: 0px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.weather_column span {
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: rgb(116, 116, 116);
+}
+
+/*운동 기록*/
+.component_column__health_record div {
+  display: flex;
+  align-items: center;
+}
+
+.health_record__title {
+  padding-bottom: 13px;
+}
+
+.component_column__health_record div span:first-child {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.js-today {
+  background-color: rgb(166, 255, 178);
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 3px 3px;
+  font-size: 12px;
+}
+
+.health_record__column {
+  margin: 12px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.health_record__column img {
+  width: 40px;
+}
+
+.health_record__column span {
+  font-size: 18px;
+}
+.health_record__column:last-child {
+  flex-direction: row-reverse;
+  margin-bottom: -12px;
+}
+.plusbutton {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(3, 218, 197);
+  box-shadow: 0px 3px 3px rgb(150, 150, 150);
+}
+
+/*관심 체육관*/
+
+.component_column__interested span {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.interested_content {
+  margin: 10px 0px;
+  padding: 0px 10px;
+}
+
+.interested_content div:not(.interested_content__name) {
+  font-size: 12px;
+  margin: 5px 0px;
+}
+
+.interested_content__name {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+
+.interested_content i {
+  margin-right: 5px;
+  color: rgba(1, 1, 1, 1);
+}
+.interested_content img {
+  border-radius: 10px;
+  width: 100%;
+  height: 220px;
+}
