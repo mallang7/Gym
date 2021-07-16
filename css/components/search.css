@@ -15,7 +15,7 @@
   height: 100px;
 }
 .sports .sports_btn_group .btn1 {
-  width: 18%;
+  width: 17%;
   height: 97.5px;
   background: #ffffff;
   border: 1.5px solid #aaaaaa;
@@ -52,8 +52,9 @@
 }
 .search_btn {
   margin-top: 60px;
-  margin-left: 50%;
+  margin-left: 20%;
   font-size: 20px;
+  position:relative;
 }
 .search_btn #search_butt {
   position: absolute;
