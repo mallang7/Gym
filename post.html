@@ -22,6 +22,18 @@
 </head>
 
 <body>
+    <div class="status-bar">
+        <div class="status-bar__column js-clock">
+            <span>00:00</span>
+        </div>
+        <div class="status-bar__column">
+        </div>
+        <div class="status-bar__column">
+            <i class="fas fa-bolt"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full fa-lg"></i>
+        </div>
+    </div>
     <div>
         <table class="table" border="1" width=500>
             <tr>
@@ -66,6 +78,37 @@
 
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
             Disqus.</a></noscript>
+
+    <nav class="tab__">
+        <ul class="tab__list">
+            <!--홈화면-->
+            <li class="tab__btn" style="margin-bottom: -1rem; margin-left:-30px;">
+                <a class="tab__link" href="index.html" style="text-decoration:none">
+                    <i class="fas fa-home fa-2x"></i>
+                    <span>홈</span>
+                </a>
+            </li>
+            <!--체육관 찾기-->
+            <li class="tab__btn" style="margin-bottom: -1rem;">
+                <a class="tab__link" href="search.html" style="text-decoration:none">
+                    <i class="fas fa-search fa-2x"></i>
+                    <span>체육관 찾기</span>
+                </a>
+            </li>
+            <li class="tab__btn" style="margin-bottom: -1rem;">
+                <a class="tab__link" href="board.html" style="text-decoration:none">
+                    <i class="fas fa-comments fa-2x"></i>
+                    <span>커뮤니티</span>
+                </a>
+            </li>
+            <li class="tab__btn" style="margin-bottom: -1rem;">
+                <a class="tab__link" href="myPage.html" style="text-decoration:none">
+                    <i class="fas fa-user fa-2x"></i>
+                    <span>내 정보</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
 </body>
 
