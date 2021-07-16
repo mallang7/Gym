@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="css/styles.css" />
+
     <link rel="stylesheet" href="css/components/status-bar.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
@@ -12,7 +14,19 @@
     
   </head>
 
-  <body>
+  <body style="margin-top:50px";>
+    <div class="status-bar">
+      <div class="status-bar__column js-clock">
+        <span>00:00</span>
+      </div>
+      <div class="status-bar__column">
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-bolt"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-full fa-lg"></i>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
         <div class="profile col-xs-4">
@@ -76,10 +90,10 @@
     </div> 
 
     <nav class="tab__">
-      <ul class="tab__list">
+      <ul class="tab__list" style="margin-left: 30px;">
           <!--홈화면-->
           <li class="tab__btn" style="margin-bottom: -1rem; margin-left:-30px;">
-              <a class="tab__link" href="Home.html" style="text-decoration:none">
+              <a class="tab__link" href="index.html" style="text-decoration:none">
                   <i class="fas fa-home fa-2x"></i>
                   <span>홈</span>
               </a>
@@ -105,6 +119,8 @@
           </li>
       </ul>
   </nav>
+  <script src="https://kit.fontawesome.com/70e0dc75f1.js" crossorigin="anonymous"></script>
+  <script src="js/clock.js"></script>
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
