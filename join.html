@@ -10,22 +10,38 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/screens/join.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/components/status-bar.css">
   </head>
 
-  <body>
-    
+  <body style="margin-top:50px;">
+      <div class="status-bar">
+      <div class="status-bar__column js-clock">
+        <span>00:00</span>
+      </div>
+      <div class="status-bar__column">
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-bolt"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-full fa-lg"></i>
+      </div>
+    </div>
     <div class="container">
       <div class="cancel">
-        <button type="button" class="btn btn-default">취소</button>
+        <button type="button" class="btn btn-default" onClick="location.href='login.html'">취소</button>
       </div>
       <form>
         <div class="form-group">
-          <label for="getid">로그인</label>
+          <label for="getid">이메일</label>
           <input type="email" class="form-control" id="getid">
         </div>
         <div class="form-group">
           <label for="pw">비밀번호</label>
+          <input type="password" class="form-control" id="pw" placeholder="비밀번호">
+        </div>
+        <div class="form-group">
+          <label for="pw">비밀번호 확인</label>
           <input type="password" class="form-control" id="pw" placeholder="비밀번호">
         </div>
         <div class="mb-3">
@@ -67,4 +83,5 @@
     </div> 
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
+  <script src="js/clock.js"></script>
 </html>
