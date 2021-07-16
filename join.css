@@ -1,3 +1,6 @@
-.two{
-  display: flex;
+.submit{
+  margin: 15px 0;
+}
+.cancel{
+  margin:15px 0;
 }
