@@ -2,11 +2,24 @@
 <html>
     <head>
     <meta charset="utf-8">
-    <div class="title"><h1>체육관 찾기</div>
+    <div class="title" style="margin-left:30px;"><h1>체육관 찾기</div>
     <link rel="stylesheet" href="./css/components/search.css">
     <link rel="stylesheet" href="./css/styles.css">
     </head>
-    <body>
+    <body style="margin-top:50px;">
+    <div class="status-bar">
+      <div class="status-bar__column js-clock">
+        <span>00:00</span>
+      </div>
+      <div class="status-bar__column">
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-bolt"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-full fa-lg"></i>
+      </div>
+    </div>
+    <div style="margin-left:30px;">
     <div class="sports">
         종목별 체육관 찾기
         <div class="sports_btn_group">
@@ -61,11 +74,12 @@
     <div class="search_btn">
     <button type="button" id="search_butt" onclick="location.href='./search_result.html'">체육관 검색</button>
     </div>
+  </div>
     <nav class="tab__">
         <ul class="tab__list">
           <!--홈화면-->
           <li class="tab__btn">
-            <a class="tab__link" href="Home.html">
+            <a class="tab__link" href="index.html">
               <i class="fas fa-home fa-2x"></i>
               <span>홈</span>
             </a>
@@ -91,6 +105,7 @@
           </li>
         </ul>
     </nav>
+    <script src="js/clock.js"></script>
     <script src="https://kit.fontawesome.com/70e0dc75f1.js" crossorigin="anonymous"></script>
     </body>
 </html>

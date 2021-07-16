@@ -1,6 +1,11 @@
-*{margin: 0px; padding: 0px;}
+/* *{margin: 0px; padding: 0px;} */
+.title{
+    display:flex;
+    font-size: 30px;
+}
 
 .sports{
+    width:100%;
     margin-top: 40px;
     font-size: 15px;
     font-weight: bold;
@@ -10,53 +15,63 @@
     height: 100px;
 }
 .sports .sports_btn_group .btn1{
-    width: 60px;
-    height: 65px;
+    width: 15%;
+    height: 97.5px;
     background: #ffffff;
     border:1.5px solid #AAAAAA;
     border-radius: 5px;
-    font-size: 11px;
+    font-size: 15px;
     letter-spacing: 0.04em;
     margin-top: 21px;
 }
+
+.sports .sports_btn_group .btn1:hover{
+    background-color: #DBB2FF;
+}
+
 .location{
     height: 200px;
-    margin-top: 20px;
-    font-size: 15px;
+    margin-top: 40px;
+    font-size: 20px;
     font-weight: bold;
 }
 .location .loca_btn_group{
-    height:166px;
     margin-top: 20px;
     
 }
 .location .loca_btn_group #butt{
-    width:65px;
-    height: 30px;
-    font-size: 13px;
+    width:97.5px;
+    height: 45px;
+    font-size: 15px;
     background-color: #ffffff;
     border: 1.2px solid #AAAAAA;
+    margin-bottom: 3px;
+}
+
+.location .loca_btn_group #butt:hover{
+    background-color: #DBB2FF;
 }
 .search_btn{
     margin-top:60px;
-    margin-left:50%
+    margin-left:50%;
+    font-size:20px;
 }
 .search_btn #search_butt{
     position: absolute;
-    width: 153px;
-    height: 46px;
+    width: 200px;
+    height: 60px;
     background: #FFFFFF;
     border: 2px solid #DBB2FF;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 20px;
 }
 .search_btn #search_butt:hover{
     background-color: #DBB2FF;
 }
 
 .result_header{
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 10px;
     margin-top: 30px;
 }
@@ -70,4 +85,6 @@
 .result .gym_text{
     margin-top: 15px;
     font-size: 13px;
+    line-height: 25px;
+    margin-left: 10px;
 }
