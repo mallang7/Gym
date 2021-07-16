@@ -8,53 +8,47 @@
     <script src="https://kit.fontawesome.com/3c4311b30d.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="statusBar">
-      <div class="statusBar_column1">
-         <span class="statusBar__clock">sdf<i class="far fa-clock"></i></span>
-      </div>
-      <div class="statusBar_column2">
-        <span class="statusBar__signal"><i class="fas fa-signal"></i></span>
-        <span> <i class="fas fa-wifi"></i></span>
-        <i class="fas fa-battery-three-quarters"></i>
-      </div>
-    </div>
+    
     <div class="profile">
       <div class="profile_photo">
-        <image src="p.jpg" style="width:100px; height: 100px; display:inline"></image>
+        <image src="" >사진</image>
       </div>
       <div class="userInfo">
-        <div class="userId">id</div>
-        <div class="otherInfo">
+        <p>id</p>
       </div>
      </div>      
-    </div>
-    <div class="changePw">
-      <form action={} method="post">
-        <label for="changedPw">비밀번호 변경</label>
-        <input type="text" id="changedPw">
-        <button type="submit" id="changing">변경</button>
+ 
+    <div class="mb-3">
+      <label for="pw" class="form-label">비밀번호</label>
+      <div class="col-sm-10 col">
+        <input type="password" class="form-control" id="inputPassword">
+      </div>
+      <form>
+        <button class="btn btn-primary" type="submit">비밀번호변경</button>
       </form>
     </div>
-    <div class="change_location">
-      <div class="info_location_find">
-        <span>위치변경</span>
-        <form action={} method="get">
-          <input type="text" id="getLo" placeholder="우편번호입력">
-          <button id="getpost">우편번호찾기</button>
-        </form>
-        <div class="info_location_find_pop">
-          <form action={} method="post">
-            <label for="street">도로명주소</label>
-            <input type="text" id="street" placeholder="**로">
-            <button type="submit" id="sendStreet">찾기</button>
-          </form>
-          <div class="info_location_pop_list" style="background-color: gray;"></div>         
-        </div>
-      </div>
-      <div class="info_location_last">
-        <form action=" " method="post">
-          <input type="text" id="detail" placeholder="상세주소입력">
-        </form>
+    </div>
+      <div class="mb-3">
+        <label for="inputPassword" class="col-sm-2 col-form-label">위치</label>
+        <div class="two row gx-5">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>시</option>
+            <option value="1">--</option>
+            <option value="2">광양시</option>
+            <option value="3">여수시</option>
+          </select>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>구</option>
+            <option value="1">--</option>
+            <option value="2">진도군</option>
+            <option value="3">장흥군</option>
+          </select>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>동</option>
+            <option value="1">하당동</option>
+            <option value="2">여천동</option>
+            <option value="3">쌍봉동</option>
+          </select>
       </div>
     </div>
     <div class="my_post">
